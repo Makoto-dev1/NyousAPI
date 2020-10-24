@@ -11,7 +11,7 @@ using Nyous.Domains;
 
 namespace Nyous.Controllers
 {
-    [Authorize] //Authorize para a classe toda
+    [Authorize(Roles = "Administrador")] //Authorize para a classe toda
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriaController : ControllerBase
